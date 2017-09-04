@@ -19,8 +19,7 @@ import android.widget.PopupWindow;
 import android.widget.PopupWindow.OnDismissListener;
 import android.widget.TextView;
 
-public class MainActivity extends FragmentActivity implements OnClickListener,FragmentAt.OnFragmentInteractionListener ,
-        FragmentAuth.OnFragmentInteractionListener,FragmentMore.OnFragmentInteractionListener,FragmentSpace.OnFragmentInteractionListener {
+public class MainActivity extends FragmentActivity implements OnClickListener{
     // 定义Fragment页面
     private FragmentAt fragmentAt;
     private FragmentAuth fragmentAuth;
@@ -282,10 +281,5 @@ public class MainActivity extends FragmentActivity implements OnClickListener,Fr
                 return false;
             }
         });
-    }
-
-    @Override
-    public void onFragmentInteraction(Uri uri) {
-
     }
 }
